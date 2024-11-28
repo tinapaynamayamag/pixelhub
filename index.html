@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Front Page Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Pixel Art Font -->
+  <style>
+    :root {
+      /* Define a font style variable for photo captions */
+      --caption-font: 'Press Start 2P', cursive; /* Pixel Art font */
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Background Image Container */
+    .background-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* Places the background behind other content */
+      overflow: hidden; /* Prevents overflow of large images */
+    }
+
+    .background-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures the image covers the entire screen */
+    }
+
+    /* Header Section */
+    header {
+      height: 33.33vh; /* 1/3rd of the page height */
+    }
+
+    header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures the image fills the header area */
+    }
+
+    /* Main Content Section */
+    main {
+      height: 66.67vh; /* Remaining page height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Photo Row for Photo 1 to Photo 3 */
+    .photo-row {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+    }
+
+    .photo-box {
+      width: 30%; /* Each rectangle takes 30% of the row width */
+      height: 70%; /* Adjust as needed */
+      background-color: #ddd;
+      border: 2px dashed #aaa; /* Fallback border if no image is uploaded */
+      display: flex;
+      align-items: flex-end; /* Align content to the bottom */
+      justify-content: center;
+      overflow: hidden; /* Prevents overflow if images are too large */
+      position: relative; /* Enables text overlay positioning */
+    }
+
+    .photo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Text Overlay (Caption) */
+    .photo-text {
+      position: absolute;
+      bottom: 5%; /* Near the bottom of the photo */
+      left: 50%;
+      transform: translateX(-50%); /* Horizontally centers the text */
+      background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 2.25rem; /* 25% larger text */
+      text-align: center;
+      font-family: var(--caption-font); /* Uses the Pixel Art font */
+    }
+
+    /* Link Styling for Clickable Box */
+    a {
+      text-decoration: none; /* Removes default link underlining */
+      display: block; /* Makes the anchor take up the whole space of the image */
+      width: 100%;
+      height: 100%;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Background Image -->
+  <div class="background-container">
+    <img src="./Assets/frontpage/frontpage_Background.png" alt="Background Image"> <!-- Replace 'background-image.jpg' with your file path -->
+  </div>
+
+  <!-- Header Section -->
+  <header>
+    <img src="./Assets/frontpage/pixelhub_Header_revised.jpg" alt="Header Image"> <!-- Replace 'header-image.jpg' with your file path -->
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <!-- Photo Row -->
+    <div class="photo-row">
+      <!-- Photo 1 -->
+      <div class="photo-box">
+        <img src="./Assets/frontpage/photo_1.jpg" alt="Photo 1"> <!-- Replace 'photo1.jpg' with your file path -->
+        <div class="photo-text">ANIME</div> <!-- Edit this text -->
+      </div>
+      <!-- Photo 2 (Clickable) -->
+      <div class="photo-box">
+        <a href="./page2.html"> <!-- Replace 'page2.html' with your target HTML file -->
+          <img src="./Assets/frontpage/photo_2.png" alt="Photo 2"> <!-- Replace 'photo2.jpg' with your file path -->
+          <div class="photo-text">ART</div> <!-- Edit this text -->
+        </a>
+      </div>
+      <!-- Photo 3 -->
+      <div class="photo-box">
+        <img src="./Assets/frontpage/photo_3.png" alt="Photo 3"> <!-- Replace 'photo3.jpg' with your file path -->
+        <div class="photo-text">GAMES</div> <!-- Edit this text -->
+      </div>
+    </div>
+  </main>
+</body>
+</html>
