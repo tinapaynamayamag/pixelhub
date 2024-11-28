@@ -21,32 +21,32 @@
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
+      width: 100 %;
+      height: 100 %;
       z-index: -1; /* Places the background behind other content */
       overflow: hidden; /* Prevents overflow of large images */
     }
 
     .background-container img {
-      width: 100%;
-      height: 100%;
+      width: 100 %;
+      height: 100 %;
       object-fit: cover; /* Ensures the image covers the entire screen */
     }
 
     /* Header Section */
     header {
-      height: 33.33vh; /* 1/3rd of the page height */
+      height: 33.33 vh; /* 1/3rd of the page height */
     }
 
     header img {
-      width: 100%;
-      height: 100%;
+      width: 100 %;
+      height: 100 %;
       object-fit: cover; /* Ensures the image fills the header area */
     }
 
     /* Main Content Section */
     main {
-      height: 66.67vh; /* Remaining page height */
+      height: 66.67 vh; /* Remaining page height */
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -58,14 +58,14 @@
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      width: 100%;
+      width: 100 %;
     }
 
     .photo-box {
-      width: 30%; /* Each rectangle takes 30% of the row width */
-      height: 70%; /* Adjust as needed */
+      width: 30 %; /* Each rectangle takes 30% of the row width */
+      height: 70 %; /* Adjust as needed */
       background-color: #ddd;
-      border: 2px dashed #aaa; /* Fallback border if no image is uploaded */
+      border: 2 px dashed #aaa; /* Fallback border if no image is uploaded */
       display: flex;
       align-items: flex-end; /* Align content to the bottom */
       justify-content: center;
@@ -74,32 +74,32 @@
     }
 
     .photo-box img {
-      width: 100%;
-      height: 100%;
+      width: 100 %;
+      height: 100 %;
       object-fit: cover;
     }
 
     /* Text Overlay (Caption) */
     .photo-text {
       position: absolute;
-      bottom: 5%; /* Near the bottom of the photo */
-      left: 50%;
-      transform: translateX(-50%); /* Horizontally centers the text */
-      background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+      bottom: 5 %; /* Near the bottom of the photo */
+      left: 50 %;
+      transform: translateX (-50 %); /* Horizontally centers the text */
+      background: rgba (0, 0, 0, 0.7); /* Semi-transparent background */
       color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: 2.25rem; /* 25% larger text */
+      padding: 10 px 20 px;
+      border-radius: 5 px;
+      font-size: 2.25 rem; /* 25% larger text */
       text-align: center;
-      font-family: var(--caption-font); /* Uses the Pixel Art font */
+      font-family: var (--caption-font); /* Uses the Pixel Art font */
     }
 
     /* Link Styling for Clickable Box */
     a {
       text-decoration: none; /* Removes default link underlining */
       display: block; /* Makes the anchor take up the whole space of the image */
-      width: 100%;
-      height: 100%;
+      width: 100 %;
+      height: 100 %;
     }
 
   </style>
