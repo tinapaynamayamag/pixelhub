@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinterest-Style Collage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    .container {
+      column-count: 6; /* Number of columns (6 per row) */
+      column-gap: 10px; /* Gap between columns */
+      padding: 20px;
+    }
+
+    .photo-box {
+      background-color: #ddd;
+      margin-bottom: 10px; /* Space between items */
+      border-radius: 15px; /* More rounded corners */
+      overflow: hidden; /* Ensures content stays within rounded borders */
+      border: 1px solid #aaa; /* Thin border for a clean look */
+      break-inside: avoid; /* Prevents items from breaking into multiple columns */
+      aspect-ratio: 9 / 16; /* Keeps a consistent 16:9 portrait ratio */
+      position: relative;
+    }
+
+    .photo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures images fill the box nicely */
+      border-radius: 15px; /* Matches the box rounding */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Photo Box 1 -->
+    <div class="photo-box">
+      <img src="" alt="Photo 1"> <!-- Replace with the image file path -->
+    </div>
+
+    <!-- Photo Box 2 -->
+    <div class="photo-box">
+      <img src="" alt="Photo 2"> <!-- Replace with the image file path -->
+    </div>
+
+    <!-- Photo Box 3 -->
+    <div class="photo-box">
+      <img src="" alt="Photo 3"> <!-- Replace with the image file path -->
+    </div>
+
+    <!-- Photo Box 4 -->
+    <div class="photo-box">
+      <img src="" alt="Photo 4"> <!-- Replace with the image file path -->
+    </div>
+
+    <!-- Photo Box 5 -->
+    <div class="photo-box">
+      <img src="" alt="Photo 5"> <!-- Replace with the image file path -->
+    </div>
+
+    <!-- Photo Box 6 -->
+    <div class="photo-box">
+      <img src="" alt="Photo 6"> <!-- Replace with the image file path -->
+    </div>
+
+    <!-- Photo Box 7 -->
+    <div class="photo-box">
+      <img src="" alt="Photo 7"> <!-- Replace with the image file path -->
+    </div>
+
+    <!-- Photo Box 8 -->
+    <div class="photo-box">
+      <img src="" alt="Photo 8"> <!-- Replace with the image file path -->
+    </div>
+
+    <!-- Photo Box 9 -->
+    <div class="photo-box">
+      <img src="" alt="Photo 9"> <!-- Replace with the image file path -->
+    </div>
+
+    <!-- Photo Box 10 -->
+    <div class="photo-box">
+      <img src="" alt="Photo 10"> <!-- Replace with the image file path -->
+    </div>
+
+    <!-- Photo Box 11 -->
+    <div class="photo-box">
+      <img src="" alt="Photo 11"> <!-- Replace with the image file path -->
+    </div>
+
+    <!-- Photo Box 12 -->
+    <div class="photo-box">
+      <img src="" alt="Photo 12"> <!-- Replace with the image file path -->
+    </div>
+  </div>
+</body>
+</html>
